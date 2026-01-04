@@ -52,4 +52,4 @@ Update `.claude/roadmap/roadmap.toml` to:
 - Don't rush—thorough discovery leads to better specs
 - Respect existing architecture and roadmap structure
 - Make dependencies explicit
-- -The goal is to build a fantastic spec.
+- The goal is to build a fantastic spec.
