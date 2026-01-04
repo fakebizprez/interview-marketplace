@@ -13,14 +13,16 @@ plugin.json              # Plugin manifest (name, version, author)
 plugins/
   interview-mode/
     commands/
-      interview-roadmap.md   # Scans codebase + interviews → roadmap specs
-      interview-spec.md      # Deep-dive interview for specific feature spec
+      interview-roadmap.md        # Scans codebase + interviews → roadmap specs
+      interview-spec.md           # Deep-dive interview for specific feature spec
+      interview-add-to-roadmap.md # Add single spec to existing roadmap
 ```
 
 ## Commands
 
-- `/interview-roadmap` - Scans codebase architecture, interviews developer about priorities/constraints, generates spec files in `.claude/roadmap/` with dependency graph
+- `/interview-roadmap` - Scans codebase architecture, interviews developer about priorities/constraints, generates spec files in `.claude/roadmap/` with `roadmap.toml`
 - `/interview-spec [plan]` - Reads `.claude/roadmap/$ARGUMENTS.md` and conducts detailed implementation interview before writing final spec
+- `/interview-add-to-roadmap` - Interviews to add a single new spec to existing roadmap, updates `roadmap.toml`
 
 ## Command Development
 
