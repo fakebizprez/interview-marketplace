@@ -1,7 +1,7 @@
 {
     "name": "interview-marketplace",
     "owner": {
-        "name": "fakebizprez"
+        "name": "fakebizprez",
         "email": "anthony@linehaul.ai"
     }
 }

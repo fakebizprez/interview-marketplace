@@ -1,0 +1,9 @@
+{
+  "name": "interview-marketplace",
+  "version": "0.1.0",
+  "description": "Interview-driven strategic roadmap generator for brownfield codebases",
+  "author": {
+    "name": "fakebizprez",
+    "email": "anthony@linehaul.ai"
+  }
+}

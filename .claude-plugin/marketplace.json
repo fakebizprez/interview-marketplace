@@ -1,0 +1,13 @@
+{
+  "name": "interview-marketplace",
+  "displayName": "Interview Marketplace",
+  "description": "Strategic roadmap planning through developer interviews - scan codebases, ask strategic questions, and generate prioritized development roadmaps with dependency tracking",
+  "category": "productivity",
+  "tags": ["roadmap", "planning", "brownfield", "strategy", "interviews"],
+  "author": {
+    "name": "fakebizprez",
+    "email": "anthony@linehaul.ai"
+  },
+  "version": "0.1.0",
+  "readme": "README.md"
+}
