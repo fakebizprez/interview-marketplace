@@ -7,8 +7,11 @@ Strategic roadmap planning through developer interviews. Scan existing codebases
 ### /interview-roadmap
 Scans a codebase and creates a strategic development roadmap by interviewing you about features, technical concerns, and implementation priorities. Generates a structured roadmap with dependencies and estimated effort.
 
-### /interview-spec
+### /interview-spec [plan]
 Deep dive interview for a specific feature or plan. Ask detailed questions about technical implementation, UI/UX, concerns, and tradeoffs before writing the specification.
+
+### /interview-add-to-roadmap
+Interview to add a single new spec to an existing roadmap. Scans current roadmap structure, conducts open-ended interview, creates numbered spec file, and updates `roadmap.toml`.
 
 ## Installation
 

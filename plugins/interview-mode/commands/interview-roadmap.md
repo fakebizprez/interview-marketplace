@@ -45,12 +45,17 @@ Based on the scan and interview, create a prioritized roadmap by generating sepa
 
 ## Step 4: Create Roadmap Overview
 
-Create `.claude/roadmap/00-roadmap.md` with:
+Create `.claude/roadmap/roadmap.toml` with:
 
 - Overview of all specs
-- Dependency graph as mermaid diagram
+- References to mermaid diagram files
 - Recommended implementation order
 - Notes on brownfield considerations
+
+Create two mermaid diagram files:
+
+- `.claude/roadmap/dependencies.mmd` - Dependency graph showing relationships between specs (blocking/blocked-by)
+- `.claude/roadmap/vision.mmd` - Projection of what the entire project will look like when complete (architecture, components, data flow)
 
 ## Guidelines
 
