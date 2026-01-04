@@ -12,10 +12,8 @@ Deep dive interview for a specific feature or plan. Ask detailed questions about
 
 ## Installation
 
-This plugin is available in the Claude Code plugin marketplace. Install it with:
+Install this plugin from GitHub:
 
 ```bash
-cc --plugin-dir /path/to/interview-marketplace
+claude plugin add github.com/fakebizprez/interview-marketplace
 ```
-
-Or reference the plugin from the marketplace in your Claude Code configuration.
