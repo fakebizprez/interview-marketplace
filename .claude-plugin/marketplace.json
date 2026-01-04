@@ -1,13 +1,17 @@
 {
   "name": "interview-marketplace",
-  "displayName": "Interview Marketplace",
-  "description": "Strategic roadmap planning through developer interviews - scan codebases, ask strategic questions, and generate prioritized development roadmaps with dependency tracking",
-  "category": "productivity",
-  "tags": ["roadmap", "planning", "brownfield", "strategy", "interviews"],
-  "author": {
+  "description": "Strategic roadmap planning through developer interviews",
+  "version": "0.1.0",
+  "owner": {
     "name": "fakebizprez",
     "email": "anthony@linehaul.ai"
   },
-  "version": "0.1.0",
-  "readme": "README.md"
+  "plugins": [
+    {
+      "name": "interview-mode",
+      "description": "Interview-driven strategic roadmap generator for brownfield codebases - scan codebases, ask strategic questions, and generate prioritized development roadmaps with dependency tracking",
+      "source": "./plugins/interview-mode",
+      "category": "productivity"
+    }
+  ]
 }
