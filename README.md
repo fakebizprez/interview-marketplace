@@ -17,3 +17,8 @@ Install this plugin from GitHub:
 ```bash
 claude plugin add github.com/fakebizprez/interview-marketplace
 ```
+
+
+Inspired by <a href="https://github.com/ThariqS">@ThariqS</a>
+
+<img width="740" height="648" alt="image" src="https://github.com/user-attachments/assets/18e5b6bd-c98b-4a5c-af38-38e6ff338f0c" />
