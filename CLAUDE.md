@@ -20,8 +20,8 @@ plugins/
 
 ## Commands
 
-- `/interview-roadmap` - Scans codebase architecture, interviews developer about priorities/constraints, generates spec files in `.claude/roadmap/` with `roadmap.toml`
-- `/interview-spec [plan]` - Reads `.claude/roadmap/$ARGUMENTS.md` and conducts detailed implementation interview before writing final spec
+- `/interview-roadmap` - Scans codebase architecture, interviews developer about priorities/constraints, generates spec files in `.claude/planning/roadmap/` with `roadmap.toml`
+- `/interview-spec [plan]` - Reads `.claude/planning/roadmap/$ARGUMENTS.md` and conducts detailed implementation interview before writing final spec
 - `/interview-add-to-roadmap` - Interviews to add a single new spec to existing roadmap, updates `roadmap.toml`
 
 ## Command Development
