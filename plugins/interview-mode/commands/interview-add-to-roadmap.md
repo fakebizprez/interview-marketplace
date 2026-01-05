@@ -6,7 +6,7 @@ model: opus
 
 ## Step 1: Understand Existing Roadmap
 
-Read all files in `.claude/roadmap/` to understand:
+Read all files in `.claude/planning/roadmap/` to understand:
 
 - Existing specs and their numbering (e.g., `01-auth.md`, `02-dashboard.md`)
 - Current priorities (P0/P1/P2)
@@ -24,7 +24,7 @@ Continue until you have a complete picture.
 
 ## Step 3: Create the Spec File
 
-Based on the interview, create a new spec file in `.claude/roadmap/`:
+Based on the interview, create a new spec file in `.claude/planning/roadmap/`:
 
 - Use the next available number (e.g., if `04-*.md` exists, create `05-*.md`)
 - Choose a clear, descriptive kebab-case name
@@ -40,7 +40,7 @@ Based on the interview, create a new spec file in `.claude/roadmap/`:
 
 ## Step 4: Update Roadmap Overview
 
-Update `.claude/roadmap/roadmap.toml` to:
+Update `.claude/planning/roadmap/roadmap.toml` to:
 
 - Add the new spec entry
 - Adjust implementation order if needed

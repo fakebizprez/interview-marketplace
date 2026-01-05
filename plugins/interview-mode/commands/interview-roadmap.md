@@ -35,7 +35,7 @@ Use AskUserQuestionTool to interview me about:
 
 ## Step 3: Create Prioritized Roadmap
 
-Based on the scan and interview, create a prioritized roadmap by generating separate spec files in `.claude/roadmap/`:
+Based on the scan and interview, create a prioritized roadmap by generating separate spec files in `.claude/planning/roadmap/`:
 
 - `{feature-name-01}.md`, `{feature-name-02}.md`, etc. for each major initiative
 - Include dependencies between specs
@@ -45,7 +45,7 @@ Based on the scan and interview, create a prioritized roadmap by generating sepa
 
 ## Step 4: Create Roadmap Overview
 
-Create `.claude/roadmap/roadmap.toml` with:
+Create `.claude/planning/roadmap/roadmap.toml` with:
 
 - Overview of all specs
 - References to mermaid diagram files
@@ -54,8 +54,8 @@ Create `.claude/roadmap/roadmap.toml` with:
 
 Create two mermaid diagram files:
 
-- `.claude/roadmap/dependencies.mmd` - Dependency graph showing relationships between specs (blocking/blocked-by)
-- `.claude/roadmap/vision.mmd` - Projection of what the entire project will look like when complete (architecture, components, data flow)
+- `.claude/planning/roadmap/dependencies.mmd` - Dependency graph showing relationships between specs (blocking/blocked-by)
+- `.claude/planning/roadmap/vision.mmd` - Projection of what the entire project will look like when complete (architecture, components, data flow)
 
 ## Guidelines
 
