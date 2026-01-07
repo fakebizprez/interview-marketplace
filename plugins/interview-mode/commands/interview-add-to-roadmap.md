@@ -43,7 +43,6 @@ Based on the interview, create a new spec file in `.claude/planning/roadmap/`:
 Update `.claude/planning/roadmap/roadmap.toml` to:
 
 - Add the new spec entry
-- Adjust implementation order if needed
 
 ## Guidelines
 
