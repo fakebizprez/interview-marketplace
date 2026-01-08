@@ -6,49 +6,55 @@ model: opus
 
 ## Step 1: Understand Existing Roadmap
 
-Read all files in `.claude/planning/roadmap/` to understand:
+Read `.claude/planning/roadmap/roadmap.toml` and scan existing spec files to understand:
 
-- Existing specs and their numbering (e.g., `01-auth.md`, `02-dashboard.md`)
-- Current priorities (P0/P1/P2)
-- Dependencies between specs
-- The overall roadmap structure from `roadmap.toml`
-- Gaps or opportunities that haven't been addressed
+- Current numbering scheme (e.g., `01-auth.md`, `02-dashboard.md`)
+- Existing priorities and dependencies
+- Where this new item fits
 
-## Step 2: Interview for New Spec
+## Step 2: Quick Capture Interview
 
-Use AskUserQuestionTool to conduct an open-ended, in-depth interview about the new feature they want to add. There is no limit to the number of questions—the goal is to build the best possible spec.
+Use AskUserQuestionTool to ask **2-4 focused questions** to capture:
 
-Be curious. Follow threads that seem interesting. Ask follow-up questions. Dig deeper on vague answers. Challenge assumptions. Let the conversation guide you toward what matters most for this particular feature.
+1. **What** is this feature? (one sentence)
+2. **Why** does it matter? (the problem it solves)
+3. **Priority** relative to existing items
+4. **Dependencies** on other roadmap items
 
-Continue until you have a complete picture.
+Keep it brief. This is idea capture, not implementation planning.
 
-## Step 3: Create the Spec File
+## Step 3: Create Roadmap Entry
 
-Based on the interview, create a new spec file in `.claude/planning/roadmap/`:
+Create a new file in `.claude/planning/roadmap/`:
 
-- Use the next available number (e.g., if `04-*.md` exists, create `05-*.md`)
-- Choose a clear, descriptive kebab-case name
-- Include:
-  - **Overview**: What this feature does and why
-  - **Priority**: P0/P1/P2 with justification
-  - **Dependencies**: Which specs must come before/after
-  - **Technical approach**: High-level implementation strategy
-  - **Key decisions**: Important choices made during interview
-  - **Scope**: What's in and what's explicitly out
-  - **Success criteria**: How we know it's done
-  - **Risks/unknowns**: What could go wrong
+- Use next available number (e.g., `05-feature-name.md`)
+- Keep it concise:
 
-## Step 4: Update Roadmap Overview
+```markdown
+# Feature Name
 
-Update `.claude/planning/roadmap/roadmap.toml` to:
+## Overview
+1-2 paragraphs: what this does and why it matters.
 
-- Add the new spec entry
+## Priority
+P0/P1/P2 with one-sentence justification.
+
+## Dependencies
+- Requires: [list specs that must come first]
+- Enables: [list specs that depend on this]
+
+## Scope Boundaries
+- **In**: [key things included]
+- **Out**: [explicitly excluded for now]
+```
+
+## Step 4: Update Roadmap
+
+Add the new entry to `.claude/planning/roadmap/roadmap.toml`.
 
 ## Guidelines
 
-- Ask strategic, non-obvious questions
-- Focus on "why" and tradeoffs, not just "what"
-- Don't rush—thorough discovery leads to better specs
-- Respect existing architecture and roadmap structure
-- Make dependencies explicit
-- The goal is to build a fantastic spec.
+- **This is quick capture, not spec building.** Keep it under 5 minutes.
+- Save deep technical details for `/interview-spec` when ready to implement.
+- Focus on "what" and "why", defer "how" to spec phase.
+- One paragraph beats three. Brevity is a feature.
